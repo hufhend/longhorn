@@ -16,6 +16,7 @@ global:
       # Select Linux nodes
       nodeSelector:
         kubernetes.io/os: "linux"
+        storage: "longhorn"
       # Recognize toleration and node selector for Longhorn run-time created components
       defaultSetting:
         taintToleration: cattle.io/os=linux:NoSchedule
